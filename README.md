@@ -1,6 +1,7 @@
 # SYPTPython
 - Python code for organisers
-- First version by Nic Wong [original coder's repository](https://github.com/not-even-wong) 
+- First version by Nic Wong [original coder's repository](https://github.com/not-even-wong)
+- output and data has been anonymised to just Lawrence etc... so you need to use your own data source
 
 ## Tournament Randomizer https://github.com/lookang/SYPTPython/blob/main/fight_matrix_randomiser.py
 
