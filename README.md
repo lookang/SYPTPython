@@ -1,5 +1,5 @@
 # SYPTPython
-Python code organisers first version by [original coder's repository](https://github.com/not-even-wong) Nic Wong
+Python code organisers first version by Nic Wong [original coder's repository](https://github.com/not-even-wong) 
 
 ## Tournament Randomizer https://github.com/lookang/SYPTPython/blob/main/fight_matrix_randomiser.py
 
