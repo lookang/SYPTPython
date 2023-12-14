@@ -1,7 +1,7 @@
 # SYPTPython
 Python code organisers
 
-## Tournament Randomizer
+## Tournament Randomizer https://github.com/lookang/SYPTPython/blob/main/fight_matrix_randomiser.py
 
 This Python script organizes teams into presentation and opponent slots for a debating tournament. The script ensures that each team presents twice and faces different opponents in each round. The code uses randomization with certain constraints to achieve a fair and diverse distribution of teams.
 
