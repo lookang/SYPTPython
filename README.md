@@ -48,7 +48,7 @@ python fight_matrix_randomiser.py
 Feel free to customize the code to fit your specific tournament requirements. For any issues or improvements, please refer to the  or open an issue.
 
 ### Acknowledgements
-Credit and thanks to Nic Wong for his original code and help to provide a first version of the python code.
+Credit and thanks to Nic Wong for his original code and help to provide a first working version of the python code.
 
 
 Part 2/3
