@@ -5,6 +5,16 @@ Python code organisers first version by Nic Wong [original coder's repository](h
 
 This Python script organizes teams into presentation and opponent slots for a debating tournament. The script ensures that each team presents twice and faces different opponents in each round. The code uses randomization with certain constraints to achieve a fair and diverse distribution of teams.
 
+## Prerequisites
+
+- Python 3.x
+- pandas
+- numpy
+- random
+
+## Run the script:
+python fight_matrix_randomiser.py
+
 ### Usage
 
 1. **Team Lists:**
@@ -37,4 +47,50 @@ This Python script organizes teams into presentation and opponent slots for a de
 Feel free to customize the code to fit your specific tournament requirements. For any issues or improvements, please refer to the  or open an issue.
 
 ### Acknowledgements
-Credit and thank Nic Wong for his original code and help to provide a first version of the python code.
+Credit and thanks to Nic Wong for his original code and help to provide a first version of the python code.
+
+
+Part 2/3
+# Cat A/B Juror Assignment 
+
+This Python script automates the assignment of jurors for a debate competition in different rooms and categories.
+
+## Overview
+
+The script reads data about the debate competition, including the assignment matrix and juror information. It then performs the assignment of head jurors and regular jurors, considering various constraints such as previous assignments, school affiliations, and more.
+
+## Prerequisites
+
+- Python 3.x
+- pandas
+- numpy
+- random
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/cat_A_juror_assignment.git
+   cd cat_A_juror_assignment
+
+      ```bash
+   git clone https://github.com/your-username/cat_B_juror_assignment.git
+   cd cat_B_juror_assignment
+
+## Run the A/B script:
+python cat_A_juror_assignment.py
+python cat_B_juror_assignment.py
+
+## Usage
+The script is designed to automate the assignment of jurors for debate competitions. Customize the script by adjusting variables such as A_list, room_list, and file paths.
+The script is designed to automate the assignment of jurors for debate competitions. Customize the script by adjusting variables such as B_list, room_list, and file paths.
+## Configuration A/B
+A_list: List of debate school/categories.
+B_list: List of debate school/categories.
+room_list: List of rooms.
+assignment_matrix.csv: CSV file containing the assignment matrix.
+juror_data.csv: CSV file containing juror information.
+
+### Acknowledgements
+Credit and thanks to Nic Wong for his original code and help to provide a first version of the python code.
