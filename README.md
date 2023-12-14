@@ -79,6 +79,8 @@ The script reads data about the debate competition, including the assignment mat
    cd cat_B_juror_assignment
 
 ## Run the A/B script:
+https://github.com/lookang/SYPTPython/blob/main/cat_A_juror_assignment.py
+https://github.com/lookang/SYPTPython/blob/main/cat_B_juror_assignment.py
 python cat_A_juror_assignment.py
 python cat_B_juror_assignment.py
 
