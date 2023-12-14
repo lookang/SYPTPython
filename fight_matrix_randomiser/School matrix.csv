@@ -1,0 +1,11 @@
+,SNGS1,HCI1,HCI2,NUSH1,NUSH2,RGS1,RI1,RI2,RV1,RV2
+SNGS1,,E3,,,,n/a,n/a,C1,,
+HCI1,n/a,,,B1,,,,,n/a,D2
+HCI2,,,,n/a,n/a,E1,E2,,,
+NUSH1,,n/a,C3,,,,,n/a,C2,
+NUSH2,,,A4,,,,,A2,n/a,n/a
+RGS1,B2,,n/a,,,,,n/a,,B4
+RI1,E4,,n/a,,,,,,D1,n/a
+RI2,n/a,,,D4,n/a,A3,,,,
+RV1,,C4,,n/a,B3,,n/a,,,
+RV2,,n/a,,,A1,n/a,D3,,,

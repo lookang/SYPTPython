@@ -1,0 +1,43 @@
+,Name,Affiliation,Index_no,Count,1,2,3,4,0
+0,Dr Massimiliano Colla,Head,0,1.0,A,-,-,-,"HCI1, RI1"
+1,Dr Yeo Ye,Head,1,3.0,C,A,-,C,"HCI1, HCI2, RGS1, RI2, RVHS2, SJI2"
+2,Associate Prof Paul Lee,Head,2,2.0,E,-,B,-,"HCI2, RI1, RVHS2, SJI2"
+3,Dr Leong Chuan Kwek,Head,3,3.0,D,E,E,-,"NUSHS1, NUSHS2, NUSHS2, RI1, RVHS2, SNGS1"
+4,Dr Wee Wei Hsiung,Head,4,3.0,-,D,D,D,"HCI2, RGS1, RI1, RI2, SJI2, SNGS1"
+5,Dr Lim Khan,Head,5,3.0,D,C,-,E,"HCI2, NUSHS1, NUSHS2, RI2, SNGS1, SNGS1"
+6,Dr Chan Taw Kuei,Head,6,2.0,C,-,C,-,"HCI2, RGS1, RI2, SNGS1"
+7,Dr Koh Teck Seng,Head,7,2.0,B,-,-,A,"HCI1, NUSHS1, NUSHS2, RGS1"
+8,Dr Muhamad Azfar Ramli,Head,8,3.0,C,B,A,-,"HCI1, HCI2, NUSHS1, NUSHS2, RI2, SJI2"
+9,Assistant Prof Tsao Hoi Nok,Head,9,2.0,D,-,-,B,"NUSHS2, RI2, RVHS2, SNGS1"
+10,Khor Eng Hao Daniel,SNGS,10,1.0,C,-,-,-,"HCI2, RI2"
+11,Sandra Ong,SNGS,11,1.0,B,-,-,-,"NUSHS1, RGS1"
+12,Steven Su,HCI,12,0.0,-,-,-,-,
+13,Ang Siew Hoon,HCI,13,0.0,-,-,-,-,
+14,Ang De Rong,HCI,14,1.0,D,-,-,-,"NUSHS2, SNGS1"
+15,Tan Hup Yew,RGS,15,0.0,-,-,-,-,
+16,Cheong Szu Chuang,RGS,16,0.0,-,-,-,-,
+17,Lau Shi Yun,RVHS,17,0.0,-,-,-,-,
+18,Khiu Yi Wen,RVHS,18,1.0,B,-,-,-,"NUSHS1, RGS1"
+19,Seow Siew Li,SJI,19,0.0,-,-,-,-,
+20,Ang Yu Long,SJI,20,0.0,-,-,-,-,
+21,NUSHS1,NUSHS,21,0.0,-,-,-,-,
+22,NUSHS2,NUSHS,22,0.0,-,-,-,-,
+23,RI1,RI,23,0.0,-,-,-,-,
+24,RI2,RI,24,0.0,-,-,-,-,
+25,Mr Lee Siew Lin,New,25,0.0,-,-,-,-,
+26,Mr Chua Xian Wei,New,26,0.0,-,-,-,-,
+27,Mr Tan Yan Quan,New,27,0.0,-,-,-,-,
+28,Mr Koh Si Yan,New,28,0.0,-,-,-,-,
+29,Ms Yuki Pan,New,29,0.0,-,-,-,-,
+30,Dr Len Yink Loong,New,30,0.0,-,-,-,-,
+31,Mr Sit Han Yu,New,31,0.0,-,-,-,-,
+32,Mr Zachary Kok Zhi Hoe,New,32,0.0,-,-,-,-,
+33,Mr Aniq Ahsan,New,33,0.0,-,-,-,-,
+34,Ms Phyllis Poh,Exp,34,1.0,A,-,-,-,"HCI1, RI1"
+35,Mr Daniel Seah,New,35,0.0,-,-,-,-,
+36,Mr Tan Jing Long,Exp,36,1.0,A,-,-,-,"HCI1, RI1"
+37,Dr Wang Xuancong,Exp,37,1.0,A,-,-,-,"HCI1, RI1"
+38,Associate Prof Pinaki Sengupta,Exp,38,1.0,C,-,-,-,"HCI2, RI2"
+39,Mr Jee Kai Yen,Exp,39,1.0,A,-,-,-,"HCI1, RI1"
+40,Ms Foo Fang Fang,Exp,40,1.0,B,-,-,-,"NUSHS1, RGS1"
+41,Dr Michael Tan,Exp,41,1.0,B,-,-,-,"NUSHS1, RGS1"
