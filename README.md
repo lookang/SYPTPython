@@ -1,4 +1,5 @@
-# SYPTPython The Singapore Young Physicists' Tournament (SYPT) is modelled after the International Young Physicists' Tournament (IYPT) https://iyptsypt.wixsite.com/sypt/copy-of-sypt-2023
+# SYPTPython The Singapore Young Physicists' Tournament (SYPT) https://iyptsypt.wixsite.com/sypt/copy-of-sypt-2023 modlled after International Young Physicists' Tournament (IYPT) 
+
 - Python code for organisers
 - First version by Nic Wong [original coder's repository](https://github.com/not-even-wong)
 - output and data has been anonymised to just Lawrence etc... so you need to use your own data source
