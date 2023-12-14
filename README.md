@@ -1,5 +1,5 @@
 # SYPTPython
-Python code organisers
+Python code organisers first version by [original coder's repository](https://github.com/not-even-wong) Nic Wong
 
 ## Tournament Randomizer https://github.com/lookang/SYPTPython/blob/main/fight_matrix_randomiser.py
 
@@ -34,4 +34,4 @@ This Python script organizes teams into presentation and opponent slots for a de
   - `Room matrix.csv`
   - `Assignment matrix.csv`
 
-Feel free to customize the code to fit your specific tournament requirements. For any issues or improvements, please refer to the [original code repository](https://github.com/not-even-wong) or open an issue.
+Feel free to customize the code to fit your specific tournament requirements. For any issues or improvements, please refer to the  or open an issue.
