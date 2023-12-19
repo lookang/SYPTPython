@@ -1,15 +1,19 @@
-# original code by https://github.com/not-even-wong 
 import pandas as pd
 import numpy as np
 import random
 
 #list of teams for 2022
-A_list=['ACJC1','HCI1','HCI2','NJC1','NUSH1','NUSH2','RGS1','RI1','RI2','RV1'] 
-B_list=['SNGS1','HCI1','HCI2','NUSH1','NUSH2','RGS1','RI1','RI2','RV1','RV2'] 
-
+#A_list=['ACJC1','HCI1','HCI2','NJC1','NUSH1','NUSH2','RGS1','RI1','RI2','RV1'] 
+#B_list=['SNGS1','HCI1','HCI2','NUSH1','NUSH2','RGS1','RI1','RI2','RV1','RV2'] 
+#https://docs.google.com/spreadsheets/d/1R7z0eo_1tYSeL9gn3e7mVPRP6SVpPshlzoowkMfvnPY/edit#gid=61845088
+# arrange for 4 teams in left top corner 2024
+A_list=[ 'RI_A1','RI_A2','NUSH_A1','NUSH_A2','NJC_A1', 'NJC_A2','HCI_A1','HCI_A2','RVHS_A1','TJC_A1']
+B_list=['RI_B1','RI_B2','NUSH_B1','NUSH_B2','HCI_B1','HCI_B2','NYGH_B1','RGS_B1','RVHS_B1','CHIJ_B2']
 
 #setup for sorting
 room_list=['A','B','C','D','E']
+
+# change maually
 team_list=B_list
 
 #check for duplicate schools
@@ -32,8 +36,8 @@ proceed=False
 attempts=0
 
 
-MAX_ATTEMPTS = 250
-while (proceed==False and attempts<MAX_ATTEMPTS):
+
+while (proceed==False and attempts<250):
     #set up empty frames
     assignment_matrix=pd.DataFrame(np.zeros([len(team_list),4]),index=team_list)
     team_p_count=np.zeros(len(team_list)) #keep track of number of presentations by each team to prioritise assignment of presentation slots in subsequent rounds
