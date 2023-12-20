@@ -1,4 +1,4 @@
-# SYPTPython The Singapore Young Physicists' Tournament (SYPT) https://iyptsypt.wixsite.com/sypt/copy-of-sypt-2023 modlled after International Young Physicists' Tournament (IYPT) 
+# SYPTPython The Singapore Young Physicists' Tournament (SYPT) https://iyptsypt.wixsite.com/sypt/ modlled after International Young Physicists' Tournament (IYPT) 
 
 - Python code for organisers
 - First version by Nic Wong [original coder's repository](https://github.com/not-even-wong)
