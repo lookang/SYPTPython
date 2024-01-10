@@ -3,22 +3,33 @@ import numpy as np
 import random
 
 # list of teams for 2024
-# A_list = ['RI_A1', 'RI_A2', 'NUSH_A1', 'NUSH_A2', 'NJC_A1', 'NJC_A2', 'HCI_A1', 'HCI_A2', 'RVHS_A1', 'TJC_A1']
-A_list = ['RI_A1', 'RI_A2', 'RI_A3', 'RI_A4', 'NJC_A1', 'NJC_A2', 'HCI_A1', 'HCI_A2', 'RVHS_A1', 'TJC_A1']
-# B_list = ['RI_B1', 'RI_B2', 'NUSH_B1', 'NUSH_B2', 'HCI_B1', 'HCI_B2', 'NYGH_B1', 'RGS_B1', 'RVHS_B1', 'CHIJ_B2']
-B_list = ['RI_B1', 'RI_B2', 'RI_B3', 'RI_B4', 'HCI_B1', 'HCI_B2', 'NYGH_B1', 'RGS_B1', 'RVHS_B1', 'CHIJ_B2']
+A_list = ['RI_A1', 'RI_A2', 'NUSH_A1', 'NUSH_A2', 'NJC_A1', 'NJC_A2', 'HCI_A1', 'HCI_A2', 'RVHS_A1', 'TJC_A1']
+# A_list = ['RI_A1', 'RI_A2', 'RI_A3', 'RI_A4', 'NJC_A1', 'NJC_A2', 'HCI_A1', 'HCI_A2', 'RVHS_A1', 'RGS_A1']
+B_list = ['RI_B1', 'RI_B2', 'NUSH_B1', 'NUSH_B2', 'HCI_B1', 'HCI_B2', 'NYGH_B1', 'RGS_B1', 'RVHS_B1', 'CHIJ_B2']
+# B_list = ['RI_B1', 'RI_B2', 'RI_B3', 'RI_B4', 'HCI_B1', 'HCI_B2', 'NYGH_B1', 'RGS_B1', 'RVHS_B1', 'CHIJ_B2']
 
 
 # setup for sorting
 room_list = ['A', 'B', 'C', 'D', 'E']
+# the code cannot run with Room_A, strange.
+#room_list = ['Room_A', 'Room B', 'Room C', 'Room D', 'Room E']
 
 # change manually
+#team_list = A_list
 team_list = B_list
 
 # check for duplicate schools
-print("Schools sending more than one team:")
-same_school = {}
-
+# print("Schools sending more than one team:")
+# same_school = {}
+# same_school = {0: 2,2: 0,0: 3,3: 0,1: 2, 2:1,1: 3,3: 1}
+same_school = {0: 2, 2: 0, 3: 0, 1: 0,0: 3, 2: 0, 3: 0, 1: 0,0: 3, 2: 1, 3: 0, 1: 2,0: 3, 2: 1, 3: 1, 1: 3}
+# print(same_school)
+# {0: 1, 1: 0}
+# {0: 2, 1: 0, 2: 0}
+# {0: 3, 1: 0, 2: 0, 3: 0}
+# {0: 3, 1: 2, 2: 1, 3: 0} #RI_B2 and RI_B3
+# {0: 3, 1: 3, 2: 1, 3: 1} #RI_B2 and RI_B4
+# 
 for i in range(len(team_list)):
     for j in range(len(team_list) - i - 1):
         text_i = team_list[i]
@@ -28,7 +39,7 @@ for i in range(len(team_list)):
             same_school[j + i + 1] = i
             print(text_i + " and " + text_j)
             print(same_school)
-            wait = input("Press Enter to continue.")
+            #wait = input("Press Enter to continue.")
         else:
             pass
 print()
@@ -36,7 +47,8 @@ print()
 proceed = False
 attempts = 0
 
-while not proceed and attempts < 500:
+MAX_ATTEMPT = 500
+while not proceed and attempts < MAX_ATTEMPT:
     # set up empty frames
     assignment_matrix = pd.DataFrame(np.zeros([len(team_list), 4]), index=team_list)
     team_p_count = np.zeros(len(team_list))
@@ -167,7 +179,8 @@ while not proceed and attempts < 500:
                     all_okay = False
                 else:
                     school_matrix.iloc[present, oppose] = str(room) + str(fight + 1)
-                    school_matrix.iloc[oppose, present] = 'n/a'
+                    # replace  with n/a to see the code attempts/workings
+                    school_matrix.iloc[oppose, present] = '  '
     except:
         all_okay = False
 
@@ -202,12 +215,16 @@ if all_okay:
     print("Room matrix:")
     print()
     print(room_matrix)
+    # Transpose the rows as columns
+    transposed_room_matrix = room_matrix.transpose()
+    print("Transposed room_matrix:\n",transposed_room_matrix)
 
 else:
     print("Failed after " + str(attempts) + " attempts")
 
 school_matrix.to_csv('./fight_matrix_randomiser/School matrix.csv')
 room_matrix.to_csv('./fight_matrix_randomiser/Room matrix.csv')
+transposed_room_matrix.to_csv('./fight_matrix_randomiser/Room matrix_transposed.csv')
 assignment_matrix.to_csv('./fight_matrix_randomiser/Assignment matrix.csv')
 #output
 # after output, excel replace RI_B3 to NUSH_B1 and RI_B4 to NUSH_B2
