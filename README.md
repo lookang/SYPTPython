@@ -1,4 +1,4 @@
-# SYPTPython The Singapore Young Physicists' Tournament (SYPT) https://iyptsypt.wixsite.com/sypt/ modlled after International Young Physicists' Tournament (IYPT) 
+![image](https://github.com/lookang/SYPTPython/assets/20143558/e95118ed-13bc-47f7-9329-0c04566b8eb7)# SYPTPython The Singapore Young Physicists' Tournament (SYPT) https://iyptsypt.wixsite.com/sypt/ modlled after International Young Physicists' Tournament (IYPT) 
 
 - Python code for organisers
 - First version by Nic Wong [original coder's repository](https://github.com/not-even-wong)
@@ -96,6 +96,26 @@ B_list: List of debate school/categories.
 room_list: List of rooms.
 assignment_matrix.csv: CSV file containing the assignment matrix.
 juror_data.csv: CSV file containing juror information.
+
+## Steps to work the Cat A assignment (Documentation)
+copy out the file /Users/lookang/Desktop/NicWong/randomisation_stuff/fight_matrix_randomiser/ArchiveCatAFullRandom/Assignment matrix.csv to the root of the folder say /Users/lookang/Desktop/NicWong/randomisation_stuff/Assignment matrix.csv
+rename Cat A Assignment matrix.csv as Cat A Assignment matrix_old.csv to protect old working files
+rename just copied file as Cat A Assignment matrix.csv so as to do minimum edits to the file cat_A_juror_assignment.py
+open up  cat_A_juror_assignment.py and noticed that the school names are RI1 and not RI_A1, so do a replace _A to blank to prepare the data file format
+the data should look like this
+	0	1	2	3
+RI1	CP	DO	BO	EP
+RI2	BP	BO	AO	DP
+NUSH1	DO	CP	BP	AO
+NUSH2	AO	BP	DP	BO
+NJC1	DP	AO	CP	DO
+NJC2	EP	EP	DO	EO
+HCI1	CO	CO	AP	BP
+HCI2	BO	AP	EP	CO
+RVHS1	AP	EO	CO	CP
+TJC1	EO	DP	EO	AP
+
+
 
 ### Acknowledgements
 Credit and thanks to Nic Wong for his original code and help to provide a first version of the python code.
