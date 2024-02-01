@@ -103,17 +103,17 @@ rename Cat A Assignment matrix.csv as Cat A Assignment matrix_old.csv to protect
 rename just copied file as Cat A Assignment matrix.csv so as to do minimum edits to the file cat_A_juror_assignment.py
 open up  cat_A_juror_assignment.py and noticed that the school names are RI1 and not RI_A1, so do a replace _A to blank to prepare the data file format
 the data should look like this
-	0	1	2	3
-RI1	CP	DO	BO	EP
-RI2	BP	BO	AO	DP
-NUSH1	DO	CP	BP	AO
-NUSH2	AO	BP	DP	BO
-NJC1	DP	AO	CP	DO
-NJC2	EP	EP	DO	EO
-HCI1	CO	CO	AP	BP
-HCI2	BO	AP	EP	CO
-RVHS1	AP	EO	CO	CP
-TJC1	EO	DP	EO	AP
+- 	0	1	2	3
+- RI1	CP	DO	BO	EP
+- RI2	BP	BO	AO	DP
+- NUSH1	DO	CP	BP	AO
+- NUSH2	AO	BP	DP	BO
+- NJC1	DP	AO	CP	DO
+- NJC2	EP	EP	DO	EO
+- HCI1	CO	CO	AP	BP
+- HCI2	BO	AP	EP	CO
+- RVHS1	AP	EO	CO	CP
+- TJC1	EO	DP	EO	AP
 
 
 
