@@ -1,0 +1,11 @@
+,RI_A1,RI_A2,NUSH_A1,NUSH_A2,NJC_A1,NJC_A2,HCI_A1,HCI_A2,RVHS_A1,RGS_A1
+RI_A1,,,__,,,E4,C1,,,__
+RI_A2,,,,__,D4,,__,B1,,
+NUSH_A1,B3,,,,__,,C2,,,__
+NUSH_A2,,B2,,,,D3,__,,__,
+NJC_A1,,__,D1,,,,,__,C3,
+NJC_A2,__,,,__,,,,,E2,E1
+HCI_A1,__,A3,__,B4,,,,,,
+HCI_A2,,__,,,A2,,,,__,E3
+RVHS_A1,,,,A1,__,__,,C4,,
+RGS_A1,D2,,A4,,,__,,__,,
