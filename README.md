@@ -87,7 +87,7 @@ School matrix:
 
 Room matrix:
 
-     |   |    0   |    1   |    2   |    3   |    4   |    5   |    6   |    7   |
+|     |   |    0   |    1   |    2   |    3   |    4   |    5   |    6   |    7   |
 |---|--------|--------|--------|--------|--------|--------|--------|--------|
 | A | NUSH_A1 | RI_A1  | RI_A1  | NJC_A1 | HCI_A2 | TJC_A1 | RI_A2  | HCI_A1 |
 | B | RVHS_A1 | TJC_A1 | TJC_A1 | RI_A2  | NUSH_A1 | RI_A2 | TJC_A1 | NJC_A1 |
