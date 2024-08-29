@@ -145,24 +145,31 @@ The script reads data about the debate competition, including the assignment mat
 - https://github.com/lookang/SYPTPython/blob/main/cat_A_juror_assignment.py
 - https://github.com/lookang/SYPTPython/blob/main/cat_B_juror_assignment.py
 - python cat_A_juror_assignment.py
+- need these files to work
+-    cat_A Assignment matrix.csv (from the eariler fight_matrix_randomiser folder rename file `Assignment matrix.csv` to `cat_A Assignment matrix.csv`)
+-    cat_A jurors.csv (need to capture these data on email google form and copy over in similar format )
 - python cat_B_juror_assignment.py
+-    cat_B Assignment matrix.csv (from the eariler fight_matrix_randomiser folder rename file `Assignment matrix.csv` to `cat_B Assignment matrix.csv`)
+-    cat_B jurors20240129.csv (need to capture these data on email google form and copy over in similar format )
 
 ## Usage
 The script is designed to automate the assignment of jurors for debate competitions. Customize the script by adjusting variables such as A_list, room_list, and file paths.
 The script is designed to automate the assignment of jurors for debate competitions. Customize the script by adjusting variables such as B_list, room_list, and file paths.
 
 ## Configuration A/B
-- A_list: List of debate school/categories.
-- B_list: List of debate school/categories.
+- cat_A Assignment matrix.csv: CSV file containing the assignment matrix of debate school/categories.
+- cat_B Assignment matrix.csv: CSV file containing the assignment matrix of debate school/categories.
+- cat_A jurors.csv: CSV file containing juror information.
+- cat_B jurors20240129.csv: CSV file containing juror information.
 - room_list: List of rooms.
-- assignment_matrix.csv: CSV file containing the assignment matrix.
-- juror_data.csv: CSV file containing juror information.
+
+
 
 ## Steps to work the Cat A assignment (Documentation)
-copy out the file /Users/lookang/Desktop/NicWong/randomisation_stuff/fight_matrix_randomiser/ArchiveCatAFullRandom/Assignment matrix.csv to the root of the folder say /Users/lookang/Desktop/NicWong/randomisation_stuff/Assignment matrix.csv
-rename Cat A Assignment matrix.csv as Cat A Assignment matrix_old.csv to protect old working files
-rename just copied file as Cat A Assignment matrix.csv so as to do minimum edits to the file cat_A_juror_assignment.py
-open up  cat_A_juror_assignment.py and noticed that the school names are RI1 and not RI_A1, so do a replace _A to blank to prepare the data file format
+- copy out the file /Users/lookang/Desktop/NicWong/randomisation_stuff/fight_matrix_randomiser/ArchiveCatAFullRandom/Assignment matrix.csv to the root of the folder say /Users/lookang/Desktop/NicWong/randomisation_stuff/Assignment matrix.csv
+- rename Cat A Assignment matrix.csv as Cat A Assignment matrix_old.csv to protect old working files
+- rename just copied file as Cat A Assignment matrix.csv so as to do minimum edits to the file cat_A_juror_assignment.py
+- open up  cat_A_juror_assignment.py and noticed that the school names are RI1 and not RI_A1, so do a replace _A to blank to prepare the data file format
 the data should look like this
 |      |  0  |  1  |  2  |  3  |
 |------|-----|-----|-----|-----|
