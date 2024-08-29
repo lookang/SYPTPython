@@ -46,7 +46,7 @@ fight_matrix_randomiser_law_working01.py
 - The final matrices are saved as CSV files in the `fight_matrix_randomiser` directory: 
   - `School matrix.csv`
   - `Room matrix.csv`
-  - `Transposed room_matrix` for copy paste into emails
+  - `Transposed room_matrix.csv` for copy paste into emails
   - `Assignment matrix.csv`
 
 Feel free to customize the code to fit your specific tournament requirements. For any issues or improvements, please refer to the  or open an issue.
