@@ -16,12 +16,13 @@ This Python script organizes teams into presentation and opponent slots for a de
 - random
 
 ## Run the script:
-python fight_matrix_randomiser.py
+fight_matrix_randomiser_law_working01.py
+
 
 ### Usage
 
 1. **Team Lists:**
-   - Modify the `A_list` and `B_list` variables to include the names of participating teams for 2022. Adjust the lists as needed.
+   - Modify the `A_list` and `B_list` variables to include the names of participating teams for 2024. Adjust the lists as needed.
 
 2. **Setup for Sorting:**
    - Modify the `room_list` and `team_list` variables based on your tournament's room and team configurations.
@@ -40,14 +41,63 @@ python fight_matrix_randomiser.py
 
 ### Notes
 
-- The script allows for a maximum of 250 randomization attempts (`MAX_ATTEMPTS`). If successful, the matrices are displayed; otherwise, a failure message is shown.
+- The script allows for a maximum of 500 randomization attempts (`MAX_ATTEMPTS`). If successful, the matrices are displayed; otherwise, a failure message is shown.
 
 - The final matrices are saved as CSV files in the `fight_matrix_randomiser` directory: 
   - `School matrix.csv`
   - `Room matrix.csv`
+  - `Transposed room_matrix` for copy paste into emails
   - `Assignment matrix.csv`
 
 Feel free to customize the code to fit your specific tournament requirements. For any issues or improvements, please refer to the  or open an issue.
+### sample output
+Attempts: 3
+
+Number of attempts needed: 4
+Final fight matrix:
+
+          0   1   2   3
+RI_A1    AO  AP  CO  CP
+RI_A2    DP  BO  BO  AP
+NUSH_A1  AP  DO  BP  EO
+NUSH_A2  DO  CP  EP  DO
+NJC_A1   CP  AO  DP  BO
+NJC_A2   EP  EP  EO  CO
+HCI_A1   EO  DP  CP  AO
+HCI_A2   CO  CO  AP  EP
+RVHS_A1  BP  EO  DO  DP
+TJC_A1   BO  BP  AO  BP
+School matrix:
+
+        RI_A1 RI_A2 NUSH_A1 NUSH_A2 NJC_A1 NJC_A2 HCI_A1 HCI_A2 RVHS_A1 TJC_A1
+RI_A1                                   A2     C4                             
+RI_A2                            D1                   A4                      
+NUSH_A1    A1    B3                                                           
+NUSH_A2                                        E3            C2               
+NJC_A1                                                       C1      D3       
+NJC_A2                                                E1             E2       
+HCI_A1     C3            D2                                                   
+HCI_A2                   E4                                                 A3
+RVHS_A1                          D4                                         B1
+TJC_A1           B2                     B4                                    
+Room matrix:
+
+         0        1        2        3        4        5        6        7
+A  NUSH_A1    RI_A1    RI_A1   NJC_A1   HCI_A2   TJC_A1    RI_A2   HCI_A1
+B  RVHS_A1   TJC_A1   TJC_A1    RI_A2  NUSH_A1    RI_A2   TJC_A1   NJC_A1
+C   NJC_A1   HCI_A2  NUSH_A2   HCI_A2   HCI_A1    RI_A1    RI_A1   NJC_A2
+D    RI_A2  NUSH_A2   HCI_A1  NUSH_A1   NJC_A1  RVHS_A1  RVHS_A1  NUSH_A2
+E   NJC_A2   HCI_A1   NJC_A2  RVHS_A1  NUSH_A2   NJC_A2   HCI_A2  NUSH_A1
+Transposed room_matrix:
+          A        B        C        D        E
+0  NUSH_A1  RVHS_A1   NJC_A1    RI_A2   NJC_A2
+1    RI_A1   TJC_A1   HCI_A2  NUSH_A2   HCI_A1
+2    RI_A1   TJC_A1  NUSH_A2   HCI_A1   NJC_A2
+3   NJC_A1    RI_A2   HCI_A2  NUSH_A1  RVHS_A1
+4   HCI_A2  NUSH_A1   HCI_A1   NJC_A1  NUSH_A2
+5   TJC_A1    RI_A2    RI_A1  RVHS_A1   NJC_A2
+6    RI_A2   TJC_A1    RI_A1  RVHS_A1   HCI_A2
+7   HCI_A1   NJC_A1   NJC_A2  NUSH_A2  NUSH_A1
 
 ### Acknowledgements
 Credit and thanks to Nic Wong for his original code and help to provide a first working version of the python code.
