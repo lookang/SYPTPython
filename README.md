@@ -4,7 +4,7 @@
 - First version by Nic Wong [original coder's repository](https://github.com/not-even-wong)
 - output and data has been anonymised to just Lawrence etc... so you need to use your own data source
 
-## Tournament Randomizer https://github.com/lookang/SYPTPython/blob/main/python/fight_matrix_randomiser_law_working01.py
+## Tournament Randomizer [https://github.com/lookang/SYPTPython/blob/main/python/fight_matrix_randomiser_law_working01.py](https://github.com/lookang/SYPTPython/blob/main/fight_matrix_randomiser_law_working01.py)
 
 This Python script organizes teams into presentation and opponent slots for a debating tournament. The script ensures that each team presents twice and faces different opponents in each round. The code uses randomization with certain constraints to achieve a fair and diverse distribution of teams.
 
