@@ -4,9 +4,8 @@ import random
 
 # list of teams for 2024
 A_list = ['RI_A1', 'RI_A2', 'NUSH_A1', 'NUSH_A2', 'NJC_A1', 'NJC_A2', 'HCI_A1', 'HCI_A2', 'RVHS_A1', 'TJC_A1']
-# A_list = ['RI_A1', 'RI_A2', 'RI_A3', 'RI_A4', 'NJC_A1', 'NJC_A2', 'HCI_A1', 'HCI_A2', 'RVHS_A1', 'RGS_A1']
 B_list = ['RI_B1', 'RI_B2', 'NUSH_B1', 'NUSH_B2', 'HCI_B1', 'HCI_B2', 'NYGH_B1', 'RGS_B1', 'RVHS_B1', 'CHIJ_B2']
-# B_list = ['RI_B1', 'RI_B2', 'RI_B3', 'RI_B4', 'HCI_B1', 'HCI_B2', 'NYGH_B1', 'RGS_B1', 'RVHS_B1', 'CHIJ_B2']
+
 
 
 # setup for sorting
@@ -15,20 +14,12 @@ room_list = ['A', 'B', 'C', 'D', 'E']
 #room_list = ['Room_A', 'Room B', 'Room C', 'Room D', 'Room E']
 
 # change manually
-#team_list = A_list
-team_list = B_list
+team_list = A_list
+# team_list = B_list
 
-# check for duplicate schools
-# print("Schools sending more than one team:")
-# same_school = {}
-# same_school = {0: 2,2: 0,0: 3,3: 0,1: 2, 2:1,1: 3,3: 1}
-same_school = {0: 2, 2: 0, 3: 0, 1: 0,0: 3, 2: 0, 3: 0, 1: 0,0: 3, 2: 1, 3: 0, 1: 2,0: 3, 2: 1, 3: 1, 1: 3}
-# print(same_school)
-# {0: 1, 1: 0}
-# {0: 2, 1: 0, 2: 0}
-# {0: 3, 1: 0, 2: 0, 3: 0}
-# {0: 3, 1: 2, 2: 1, 3: 0} #RI_B2 and RI_B3
-# {0: 3, 1: 3, 2: 1, 3: 1} #RI_B2 and RI_B4
+
+same_school = {}
+
 # 
 for i in range(len(team_list)):
     for j in range(len(team_list) - i - 1):
@@ -39,7 +30,7 @@ for i in range(len(team_list)):
             same_school[j + i + 1] = i
             print(text_i + " and " + text_j)
             print(same_school)
-            #wait = input("Press Enter to continue.")
+            
         else:
             pass
 print()
@@ -226,42 +217,3 @@ school_matrix.to_csv('./fight_matrix_randomiser/School matrix.csv')
 room_matrix.to_csv('./fight_matrix_randomiser/Room matrix.csv')
 transposed_room_matrix.to_csv('./fight_matrix_randomiser/Room matrix_transposed.csv')
 assignment_matrix.to_csv('./fight_matrix_randomiser/Assignment matrix.csv')
-#output
-# after output, excel replace RI_B3 to NUSH_B1 and RI_B4 to NUSH_B2
-'''
-Number of attempts needed: 416
-Final fight matrix:
-
-          0   1   2   3
-RI_B1    DO  AO  AP  CP
-RI_B2    EO  CP  BO  AP
-RI_B3    AO  BP  EP  EO
-RI_B4    BO  DP  DO  BP
-HCI_B1   AP  CO  DP  CO
-HCI_B2   CP  EO  CO  EP
-NYGH_B1  CO  AP  EO  DP
-RGS_B1   EP  EP  AO  BO
-RVHS_B1  DP  DO  CP  AO
-CHIJ_B2  BP  BO  BP  DO
-School matrix:
-
-        RI_B1 RI_B2 RI_B3 RI_B4 HCI_B1 HCI_B2 NYGH_B1 RGS_B1 RVHS_B1 CHIJ_B2
-RI_B1                               C4            n/a     A3     n/a        
-RI_B2                               C2                   n/a      A4     n/a
-RI_B3                              n/a    n/a      E3                     B2
-RI_B4                              n/a                    B4      D2     n/a
-HCI_B1    n/a   n/a    A1    D3                                             
-HCI_B2                 E4                          C1    n/a     n/a        
-NYGH_B1    A2         n/a                 n/a                             D4
-RGS_B1    n/a    E1         n/a            E2                               
-RVHS_B1    D1   n/a         n/a            C3                               
-CHIJ_B2          B3   n/a    B1                   n/a                       
-Room matrix:
-
-         0        1        2        3        4        5        6        7
-A   HCI_B1    RI_B3  NYGH_B1    RI_B1    RI_B1   RGS_B1    RI_B2  RVHS_B1
-B  CHIJ_B2    RI_B4    RI_B3  CHIJ_B2  CHIJ_B2    RI_B2    RI_B4   RGS_B1
-C   HCI_B2  NYGH_B1    RI_B2   HCI_B1  RVHS_B1   HCI_B2    RI_B1   HCI_B1
-D  RVHS_B1    RI_B1    RI_B4  RVHS_B1   HCI_B1    RI_B4  NYGH_B1  CHIJ_B2
-E   RGS_B1    RI_B2   RGS_B1   HCI_B2    RI_B3  NYGH_B1   HCI_B2    RI_B3
-'''

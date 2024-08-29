@@ -1,11 +1,11 @@
-,SNGS1,HCI1,HCI2,NUSH1,NUSH2,RGS1,RI1,RI2,RV1,RV2
-SNGS1,,,B1,n/a,n/a,,,D2,,
-HCI1,,,,E1,,D4,,,n/a,n/a
-HCI2,n/a,,,A2,,E3,,,,n/a
-NUSH1,B3,n/a,n/a,,,,,E4,,
-NUSH2,A4,,,,,,B2,n/a,n/a,
-RGS1,,n/a,n/a,,,,C1,,E2,
-RI1,,,,,n/a,n/a,,,C4,A3
-RI2,n/a,,,n/a,C3,,,,,D1
-RV1,,D3,,,A1,n/a,n/a,,,
-RV2,,C2,B4,,,,n/a,n/a,,
+,RI_A1,RI_A2,NUSH_A1,NUSH_A2,NJC_A1,NJC_A2,HCI_A1,HCI_A2,RVHS_A1,TJC_A1
+RI_A1,,,,  ,E3,,  ,D1,,
+RI_A2,,,E4,  ,C2,,  ,,,
+NUSH_A1,,  ,,,,E2,,  ,,C1
+NUSH_A2,B4,E1,,,,,,  ,  ,
+NJC_A1,  ,  ,,,,,A1,,,C4
+NJC_A2,,,  ,,,,,D4,B1,  
+HCI_A1,B2,D3,,,  ,,,,  ,
+HCI_A2,  ,,C3,D2,,  ,,,,
+RVHS_A1,,,,A3,,  ,A4,,,  
+TJC_A1,,,  ,,  ,B3,,,A2,
