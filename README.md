@@ -171,6 +171,8 @@ The script is designed to automate the assignment of jurors for debate competiti
 - rename just copied file as Cat A Assignment matrix.csv so as to do minimum edits to the file cat_A_juror_assignment.py
 - open up  cat_A_juror_assignment.py and noticed that the school names are RI1 and not RI_A1, so do a replace _A to blank to prepare the data file format
 the data should look like this
+
+
 |      |  0  |  1  |  2  |  3  |
 |------|-----|-----|-----|-----|
 | RI1  |  CP |  DO |  BO |  EP |
