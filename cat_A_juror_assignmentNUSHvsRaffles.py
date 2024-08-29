@@ -1,6 +1,6 @@
-# copy Assignment matrix.csv file from folder/fight_matrix_randomiser to root and rename as cat_B Assignment matrix.csv
-# cat_B Assignment matrix.csv must be cleaned up first by doing a replace _B by 
-# expected output of cat_B Assignment matrix.csv is
+# copy Assignment matrix.csv file from folder/fight_matrix_randomiser to root and rename as cat_A Assignment matrix.csv
+# cat_A Assignment matrix.csv must be cleaned up first by doing a replace _B by 
+# expected output of cat_A Assignment matrix.csv is
 '''	0	1	2	3
 RI1	DP	EP	EO	AO
 RI2	EO	CP	CP	DO
@@ -13,7 +13,7 @@ RGS1	CO	AO	BP	DP
 RVHS1	DO	BO	AP	EP
 CHIJ2	BO	AP	DO	CP
 ''' 
-# cat_B jurors20240129.csv must be manually added and format first keep to original
+# cat_A jurors20240129.csv muat be manually added and format first keep to original
 # data in csv are Head, Exp, New for jurors
 # very important! cannot have duplicate names as it jams the code, name must be unique
 # serial number is not unique
@@ -43,8 +43,8 @@ solved=0
 MAX_ATTEMPT = 300
 while solved<MAX_ATTEMPT:
     # taken from the fight_matrix_randomiser_law_working01.py output file called Assignment matrix.csv
-    assignment_matrix=pd.read_csv("cat_B Assignment matrix.csv")
-    #assignment_matrix=pd.read_csv("cat_B Assignment matrix_old.csv")
+    assignment_matrix=pd.read_csv("cat_A Assignment matrix.csv")
+    #assignment_matrix=pd.read_csv("cat_A Assignment matrix_old.csv")
     assignment_matrix.columns=['0','1','2','3','4']
     
     for i in range(assignment_matrix.shape[0]):
@@ -57,17 +57,17 @@ while solved<MAX_ATTEMPT:
     
         
     assignment_matrix_original=assignment_matrix.copy(deep=True)
-    assignment_matrix_original['0']=pd.read_csv("cat_B Assignment matrix.csv")['Unnamed: 0']
-    # assignment_matrix_original['0']=pd.read_csv("cat_B Assignment matrix_old.csv")['Unnamed: 0']
+    assignment_matrix_original['0']=pd.read_csv("cat_A Assignment matrix.csv")['Unnamed: 0']
+    # assignment_matrix_original['0']=pd.read_csv("cat_A Assignment matrix_old.csv")['Unnamed: 0']
     # assignment_matrix=assignment_matrix.replace('RI','Raffles').replace('RGS','Raffles')
     assignment_matrix=assignment_matrix.replace('RI','Raffles')
     #print(assignment_matrix)
     
-    # juror_data=pd.read_csv("cat_B jurors.csv",delimiter=";")
-    juror_data=pd.read_csv("cat_B jurors20240129.csv",delimiter=";")
-    # juror_data=pd.read_csv("cat_BJurors2024.csv",delimiter=";")
+    # juror_data=pd.read_csv("cat_A jurors.csv",delimiter=";")
+    juror_data=pd.read_csv("cat_A jurors.csv",delimiter=";")
+    # juror_data=pd.read_csv("cat_AJurors2024.csv",delimiter=";")
     print(juror_data)
-    #juror_data=pd.read_csv("cat_BJurors2024formatted.csv",delimiter=";")
+    #juror_data=pd.read_csv("cat_AJurors2024formatted.csv",delimiter=";")
     #print(juror_data)
     #wait = input("Press Enter to continue.")
     
@@ -406,7 +406,7 @@ while solved<MAX_ATTEMPT:
             juror_data_original=juror_data_original.fillna("-")
             #print(juror_data_original)
         
-            juror_data_original.to_csv("./cat_B_juror_assignment/Juror schedule.csv")
+            juror_data_original.to_csv("./cat_A_juror_assignment/Juror schedule.csv")
             
             list_output=pd.DataFrame(['a'])
             row=0
@@ -423,7 +423,7 @@ while solved<MAX_ATTEMPT:
                     list_output[row+2]=juror_list
                     list_output[row+3]=""
                     row+=4
-            list_output.transpose().to_csv("./cat_B_juror_assignment/juror_assignment_list.csv")
+            list_output.transpose().to_csv("./cat_A_juror_assignment/juror_assignment_list.csv")
             
             
             
@@ -472,7 +472,7 @@ while solved<MAX_ATTEMPT:
                     row+=1
         
             #print(table_output)        
-            table_output.to_csv("./cat_B_juror_assignment/juror_assignment_list_table.csv")
+            table_output.to_csv("./cat_A_juror_assignment/juror_assignment_list_table.csv")
             
             solved=2000
             
@@ -515,7 +515,7 @@ for juror_index in range(len(juror_data_original)):
 
 
 print(juror_data_original)
-juror_data_original.to_csv("./cat_B_juror_assignment/Juror schedule.csv")
+juror_data_original.to_csv("./cat_A_juror_assignment/Juror schedule.csv")
 
 print()
 
