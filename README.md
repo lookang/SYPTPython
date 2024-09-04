@@ -16,7 +16,33 @@ This Python script organizes teams into presentation and opponent slots for a de
 - random
 
 ## Run the script:
-python fight_matrix_randomiser_law_working01.py
+
+To run the Python script, you first need to navigate to the folder where the script is located using the command line. Here’s how you can do that and then run the script:
+
+1. **Open Command Line or Terminal**: 
+   - On Windows, you can use **Command Prompt** or **PowerShell**.
+   - On macOS or Linux, open the **Terminal**.
+
+2. **Navigate to the folder**: 
+   Use the `cd` (change directory) command to navigate to the folder where your script is saved. For example, if your script is located in a folder called `Desktop/NicWong/SYPTPython-main` on your desktop, you would enter:
+
+   - Windows:
+     ```bash
+     cd Desktop/NicWong/SYPTPython-main
+     ```
+   - macOS/Linux:
+     ```bash
+     cd /Users/lookang/Desktop/NicWong/SYPTPython-main
+     ```
+
+3. **Run the script**: 
+   Once you are in the correct folder, you can run the script by typing the following command:
+
+   ```bash
+   python fight_matrix_randomiser_law_working01.py
+   ```
+
+This will execute the Python script in that directory.
 
 
 ### Usage
@@ -131,16 +157,33 @@ The script reads data about the debate competition, including the assignment mat
 
 ## Getting Started
 
-1. Clone the repository:
+1. Prepare the files cat_A Assignment matrix.csv and cat_B Assignment matrix.csv into the root of the folder
+2. cd to the Folder
+3.**Run the script**: 
+   Once you are in the correct folder, you can run the script by typing the following command:
 
    ```bash
-   git clone https://github.com/your-username/cat_A_juror_assignment.git
-   cd cat_A_juror_assignment
+   python preparecatAcsv.py
+   ```
+This will execute the Python script in that directory and prepare the file cat_A Assignment matrix.csv at the root of the folder.
+or 
+ ```bash
+   python preparecatBcsv.py
+   ```
+This will execute the Python script in that directory and prepare the file cat_B Assignment matrix.csv at the root of the folder.
 
-      ```bash
-   git clone https://github.com/your-username/cat_B_juror_assignment.git
-   cd cat_B_juror_assignment
+# CSV Row Index Modifier
 
+This Python script loads a CSV file, replaces the substring `'_A'` in the row index with an empty string, and saves the modified DataFrame both in the current directory and one level up in the folder structure as new CSV files.
+
+## How It Works
+
+- The script reads a CSV file named `Assignment matrix.csv`.
+- It processes the row indices to remove the substring `'_A'`.
+- The modified data is saved as `cat_A Assignment matrix.csv` in the current directory and also in the parent directory (one level up).
+
+
+4. 
 ## Run the A/B script:
 - https://github.com/lookang/SYPTPython/blob/main/cat_A_juror_assignment.py
 - https://github.com/lookang/SYPTPython/blob/main/cat_B_juror_assignment.py
